@@ -1,2 +1,3 @@
 ---
 certbot_package: letsencrypt
+certbot_eff_repo: ppa:certbot/certbot

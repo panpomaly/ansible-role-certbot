@@ -1,0 +1,5 @@
+---
+certbot_package: certbot
+certbot_eff_repos:
+  - universe
+  - ppa:certbot/certbot

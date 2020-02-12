@@ -1,0 +1,18 @@
+---
+- name: Add repos for Ubuntu
+  block:
+    - name: Install software-properties-common.
+      apt:
+        state: present
+        name: software-properties-common
+        cache_valid_time: 3600
+
+    - name: Add repos
+      apt_repo:
+        repo: "{{item}}"
+        update: yes
+      with_items:
+        - universe
+        - "{{certbot_eff_repos}}"
+
+  when: ansible_distribution == "Ubuntu"

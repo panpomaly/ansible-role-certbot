@@ -34,5 +34,7 @@ certbot_repo: https://github.com/certbot/certbot.git
 certbot_version: master
 certbot_keep_updated: true
 
+certbot_install_from_eff_repo: false
+
 # Where to put Certbot when installing from source.
 certbot_dir: /opt/certbot
