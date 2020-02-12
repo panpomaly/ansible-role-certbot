@@ -35,6 +35,7 @@ certbot_version: master
 certbot_keep_updated: true
 
 certbot_install_from_eff_repo: false
+certbot_update_when_installed: false
 
 # Where to put Certbot when installing from source.
 certbot_dir: /opt/certbot
