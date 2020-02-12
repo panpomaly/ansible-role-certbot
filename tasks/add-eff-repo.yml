@@ -9,10 +9,7 @@
 
     - name: Add repos
       apt_repository:
-        repo: "{{item}}"
+        repo: "{{certbot_eff_repo}}"
         update_cache: yes
-      with_items:
-        - universe
-        - "{{certbot_eff_repos}}"
 
   when: ansible_distribution == "Ubuntu"
